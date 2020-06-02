@@ -1,5 +1,5 @@
 class ArticlesController < ApplicationController
-  validates_presence_of(:title)
+  validates :title, presence: true
 end
   before_action :set_article, only: [:show, :edit, :update, :destroy]
 
